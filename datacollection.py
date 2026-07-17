@@ -33,7 +33,7 @@ def speed_test(browser, engine):
     print(f"Page load time for {browser} and {engine}: {load_time:.2f} seconds")
 
     # Write the data to a csv file
-    with open('search_times.csv', 'a') as csvfile:
+    with open('data/search_times.csv', 'a') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow([browser, engine, load_time])
 
@@ -41,7 +41,7 @@ def speed_test(browser, engine):
     driver.quit()
 
 # Read browser and search engine pairs from the CSV file
-with open('order.csv', 'r') as csvfile:
+with open('data/order.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     next(reader)  # Skip the header row if present
     for row in reader:

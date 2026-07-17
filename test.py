@@ -34,7 +34,7 @@ load_time = end_time - start_time
 print("Page load time: %.2f seconds" % load_time)
 
 # Write the data to a csv file
-with open('search_times.csv', 'a') as csvfile:
+with open('data/search_times.csv', 'a') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([browser, engine, load_time])
 

@@ -2,3 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+.~lock.*
+geckodriver.log
+*.webm
+__pycache__/
+.DS_Store

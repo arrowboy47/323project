@@ -25,5 +25,5 @@ for (i in 1:nrow(treatments)) {
 randomized_assignments <- randomized_assignments[sample(nrow(randomized_assignments)), ]
 
 # Write the factor1 and factor2 columns to the "order.csv" file
-write.csv(randomized_assignments, "order.csv", row.names = FALSE,quote = FALSE)
+write.csv(randomized_assignments, "data/order.csv", row.names = FALSE,quote = FALSE)
 
